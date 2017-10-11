@@ -1,0 +1,22 @@
+5. 
+	a.
+		$ git push origin master
+		Counting objects: 4, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (3/3), done.
+		Writing objects: 100% (4/4), 411 bytes | 411.00 KiB/s, done.
+		Total 4 (delta 1), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+		To https://github.com/sfinn13/Assignment1.git
+		   05b8ecd..87f10ea  master -> master
+
+	b. 9 commits so far; git log
+	c. Date:   Wed Sep 27 16:31:42 2017 -0500; git log --follow ".gitignore"
+	d. commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+	   commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+	e. Branched are useful for isolating developement activities among the team, as well as verifying
+		changes before delivering code to other developers
+	f. git log gets info about the last commits, whereas git status shows the working tree status
+	g. git log --follow "Weapon.h"
+	h. git log --grep="file"
+	i. Inheritance is when an object acquires or "inherits" data and functions from its parent object. Polymorphism is when a function is created that works with an object, as well as any subclass of that object. Encapsulation is a way of keeping the "insides" of an object hidden.
