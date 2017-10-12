@@ -20,3 +20,5 @@
 	g. git log --follow "Weapon.h"
 	h. git log --grep="file"
 	i. Inheritance is when an object acquires or "inherits" data and functions from its parent object. Polymorphism is when a function is created that works with an object, as well as any subclass of that object. Encapsulation is a way of keeping the "insides" of an object hidden.
+
+7. The RoleGame prototype uses Polymorphism in the sense that each weapon inherits the hit() funciton from the "Weapon" class. 
