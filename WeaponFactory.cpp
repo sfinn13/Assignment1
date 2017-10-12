@@ -10,6 +10,7 @@
 #include "CommonSword.h" 
 #include "CommonSpear.h"
 #include "SimpleAxe.h"
+#include "HighPowerRevolver.h"
 
 WeaponFactory* WeaponFactory::instance = NULL;
 
