@@ -8,6 +8,7 @@ OBJS=		\
 		$(BUILD_DIR)/CommonSword.o \
 		$(BUILD_DIR)/CommonSpear.o 
 		$(BUILD_DIR)/SimpleAxe.o 
+		$(BUILD_DIR)/HighPowerRevolver.o 
 
 all: main.out
 
@@ -30,6 +31,9 @@ $(BUILD_DIR)/CommonSpear.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o CommonSpear.cpp C
 $(BUILD_DIR)/SimpleAxe.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o SimpleAxe.cpp SimpleAxe.h
 	$(CXX) $(CXXFLAGS) -c -o $@ SimpleAxe.cpp
 
+$(BUILD_DIR)/HighPowerRevolver.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o HighPowerRevolver.cpp HighPowerRevolver.h
+	$(CXX) $(CXXFLAGS) -c -o $@ HighPowerRevolver.cpp
+
 $(BUILD_DIR)/Weapon.o: $(BUILD_DIR) Weapon.cpp Weapon.h
 	$(CXX) $(CXXFLAGS) -c -o $@ Weapon.cpp
 
@@ -39,6 +43,8 @@ clean:
 	rm -f $(BUILD_DIR)/main.o
 	rm -f $(BUILD_DIR)/CommonSword.o
 	rm -f $(BUILD_DIR)/CommonSpear.o
+	rm -f $(BUILD_DIR)/SimpleAxe.o
+	rm -f $(BUILD_DIR)/HighPowerRevolver.o
 
 	rm -rf $(BUILD_DIR)
 
